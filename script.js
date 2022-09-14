@@ -19,7 +19,7 @@ fetch("./texts.json")
     question.innerHTML = questionText;
   });
 
-// checks the user typed character and displays accordingly
+// checks the user displaytyped character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
 
@@ -45,6 +45,7 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
+    errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
 
