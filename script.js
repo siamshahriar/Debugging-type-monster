@@ -113,6 +113,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
+      //none means it will not show in display
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
 
