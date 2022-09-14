@@ -208,3 +208,41 @@ and (max-device-width : 480px) {
     gap: 2rem;
   }
 }
+
+.blog{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    92.49deg,
+    rgba(255, 255, 255, 0.1) 0.18%,
+    rgba(255, 255, 255, 0.05) 99.85%
+  );
+  backdrop-filter: blur(5px);
+  margin-bottom: 30px;
+  padding: 3rem;
+}
+.que{
+  color: rgb(255, 166, 166);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  /* color: ; */
+}
+.ans{
+  font-weight: 100;
+}
+#header-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+#header-area:nth-child(1){
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
